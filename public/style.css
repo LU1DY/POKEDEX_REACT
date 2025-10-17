@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  background-color: #0c0c0c;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+  background: #eee;
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color);
+  background: white;
+  box-shadow: 0 0 0 3px var(--color-light);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  transition: 0.1s;
+  background: var(--color);
+  color: var(--color-dark);
+  padding: 0.8rem 1.6rem;
+}
+
+button:hover,
+button:focus {
+  background: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light), 0 0 0 4px var(--color);
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 0 0 3px var(--color), 0 0 0 4px var(--color);
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3rem;
+  h1 {
+    color: #fff;
+    font-size: 5rem;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 10rem;
+  img {
+    width: 20rem;
+    filter: brightness(0);
+  }
+  & .redes {
+    display: flex;
+    column-gap: 3.5rem;
+    a {
+      img {
+        width: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.section-renderizar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    color: #fff;
+    font-size: 4.5rem;
+  }
+  p {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+  button {
+    border: 1px #4c4e6c solid;
+    background-color: #0f1020;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    & img {
+      object-fit: contain;
+      width: 3rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 20rem;
+  & .name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.5rem;
+    img {
+      width: 20rem;
+      filter: brightness(0);
+    }
+    p {
+      color: #0c0c0c;
+      font-size: 1.4rem;
+    }
+  }
+  & .redes {
+    display: flex;
+    column-gap: 3.5rem;
+    a {
+      img {
+        width: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
