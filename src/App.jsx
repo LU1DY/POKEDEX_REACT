@@ -10,7 +10,7 @@ const App = () => {
   return (
     <main id="home">
       <Header />
-      <Contador indice={indice} setIndice={setIndice} />
+
       <h1>Pokemons:</h1>
 
       {indice ? (
@@ -20,6 +20,7 @@ const App = () => {
           <p style={{ fontSize: "1.6rem", color: "#fff" }}>Sem pokemons...</p>
         </>
       )}
+      <Contador indice={indice} setIndice={setIndice} />
       <Footer />
     </main>
   );
